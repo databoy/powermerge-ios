@@ -15,6 +15,12 @@
 		831EC6C21C346341005BC034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831EC6C01C346341005BC034 /* Main.storyboard */; };
 		831EC6C41C346341005BC034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831EC6C31C346341005BC034 /* Assets.xcassets */; };
 		831EC6C71C346341005BC034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831EC6C51C346341005BC034 /* LaunchScreen.storyboard */; };
+		831EC6D51C34684B005BC034 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EC6D41C34684A005BC034 /* CoreGraphics.framework */; };
+		831EC6D71C34685A005BC034 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EC6D61C34685A005BC034 /* UIKit.framework */; };
+		831EC6D91C346878005BC034 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EC6D81C346878005BC034 /* SpriteKit.framework */; };
+		831EC6DB1C346880005BC034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EC6DA1C346880005BC034 /* Foundation.framework */; };
+		831EC6E01C346E27005BC034 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EC6DF1C346E27005BC034 /* Theme.m */; };
+		831EC6E41C347A18005BC034 /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EC6E31C347A18005BC034 /* GlobalState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +28,24 @@
 		831EC6B31C346341005BC034 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		831EC6B51C346341005BC034 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		831EC6B61C346341005BC034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		831EC6B81C346341005BC034 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		831EC6B91C346341005BC034 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		831EC6B81C346341005BC034 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = ../GameScene.h; sourceTree = "<group>"; };
+		831EC6B91C346341005BC034 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = ../GameScene.m; sourceTree = "<group>"; };
 		831EC6BB1C346341005BC034 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		831EC6BD1C346341005BC034 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		831EC6BE1C346341005BC034 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		831EC6BD1C346341005BC034 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../GameViewController.h; sourceTree = "<group>"; };
+		831EC6BE1C346341005BC034 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = ../GameViewController.m; sourceTree = "<group>"; };
 		831EC6C11C346341005BC034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		831EC6C31C346341005BC034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		831EC6C61C346341005BC034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		831EC6C81C346341005BC034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		831EC6D41C34684A005BC034 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		831EC6D61C34685A005BC034 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		831EC6D81C346878005BC034 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		831EC6DA1C346880005BC034 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		831EC6DE1C346E27005BC034 /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		831EC6DF1C346E27005BC034 /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
+		831EC6E11C3473D1005BC034 /* MyPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPosition.h; sourceTree = "<group>"; };
+		831EC6E21C347A18005BC034 /* GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalState.h; sourceTree = "<group>"; };
+		831EC6E31C347A18005BC034 /* GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831EC6D51C34684B005BC034 /* CoreGraphics.framework in Frameworks */,
+				831EC6D71C34685A005BC034 /* UIKit.framework in Frameworks */,
+				831EC6D91C346878005BC034 /* SpriteKit.framework in Frameworks */,
+				831EC6DB1C346880005BC034 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				831EC6B11C346341005BC034 /* MergePower */,
+				831EC6DC1C3468BC005BC034 /* Frameworks */,
 				831EC6B01C346341005BC034 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,23 +83,17 @@
 		831EC6B11C346341005BC034 /* MergePower */ = {
 			isa = PBXGroup;
 			children = (
+				831EC6B51C346341005BC034 /* AppDelegate.h */,
+				831EC6B61C346341005BC034 /* AppDelegate.m */,
+				831EC6C01C346341005BC034 /* Main.storyboard */,
 				831EC6CE1C3466BB005BC034 /* Appearance */,
 				831EC6CF1C3466CD005BC034 /* Controller */,
 				831EC6D01C3466EE005BC034 /* Global */,
 				831EC6D11C3466F8005BC034 /* Sprite Kit */,
 				831EC6D21C346700005BC034 /* State */,
 				831EC6D31C346709005BC034 /* View */,
-				831EC6B51C346341005BC034 /* AppDelegate.h */,
-				831EC6B61C346341005BC034 /* AppDelegate.m */,
-				831EC6B81C346341005BC034 /* GameScene.h */,
-				831EC6B91C346341005BC034 /* GameScene.m */,
-				831EC6BB1C346341005BC034 /* GameScene.sks */,
-				831EC6BD1C346341005BC034 /* GameViewController.h */,
-				831EC6BE1C346341005BC034 /* GameViewController.m */,
-				831EC6C01C346341005BC034 /* Main.storyboard */,
 				831EC6C31C346341005BC034 /* Assets.xcassets */,
 				831EC6C51C346341005BC034 /* LaunchScreen.storyboard */,
-				831EC6C81C346341005BC034 /* Info.plist */,
 				831EC6B21C346341005BC034 /* Supporting Files */,
 			);
 			path = MergePower;
@@ -88,6 +102,8 @@
 		831EC6B21C346341005BC034 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				831EC6BB1C346341005BC034 /* GameScene.sks */,
+				831EC6C81C346341005BC034 /* Info.plist */,
 				831EC6B31C346341005BC034 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -96,6 +112,8 @@
 		831EC6CE1C3466BB005BC034 /* Appearance */ = {
 			isa = PBXGroup;
 			children = (
+				831EC6DE1C346E27005BC034 /* Theme.h */,
+				831EC6DF1C346E27005BC034 /* Theme.m */,
 			);
 			path = Appearance;
 			sourceTree = "<group>";
@@ -103,6 +121,8 @@
 		831EC6CF1C3466CD005BC034 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				831EC6BD1C346341005BC034 /* GameViewController.h */,
+				831EC6BE1C346341005BC034 /* GameViewController.m */,
 			);
 			name = Controller;
 			path = MergePower/Controller;
@@ -111,6 +131,9 @@
 		831EC6D01C3466EE005BC034 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				831EC6E11C3473D1005BC034 /* MyPosition.h */,
+				831EC6E21C347A18005BC034 /* GlobalState.h */,
+				831EC6E31C347A18005BC034 /* GlobalState.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -118,6 +141,8 @@
 		831EC6D11C3466F8005BC034 /* Sprite Kit */ = {
 			isa = PBXGroup;
 			children = (
+				831EC6B81C346341005BC034 /* GameScene.h */,
+				831EC6B91C346341005BC034 /* GameScene.m */,
 			);
 			path = "Sprite Kit";
 			sourceTree = "<group>";
@@ -134,6 +159,17 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		831EC6DC1C3468BC005BC034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				831EC6DA1C346880005BC034 /* Foundation.framework */,
+				831EC6D81C346878005BC034 /* SpriteKit.framework */,
+				831EC6D61C34685A005BC034 /* UIKit.framework */,
+				831EC6D41C34684A005BC034 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +246,9 @@
 			files = (
 				831EC6BF1C346341005BC034 /* GameViewController.m in Sources */,
 				831EC6B71C346341005BC034 /* AppDelegate.m in Sources */,
+				831EC6E41C347A18005BC034 /* GlobalState.m in Sources */,
 				831EC6BA1C346341005BC034 /* GameScene.m in Sources */,
+				831EC6E01C346E27005BC034 /* Theme.m in Sources */,
 				831EC6B41C346341005BC034 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
