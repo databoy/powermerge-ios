@@ -63,6 +63,12 @@
 		831EC6B11C346341005BC034 /* MergePower */ = {
 			isa = PBXGroup;
 			children = (
+				831EC6CE1C3466BB005BC034 /* Appearance */,
+				831EC6CF1C3466CD005BC034 /* Controller */,
+				831EC6D01C3466EE005BC034 /* Global */,
+				831EC6D11C3466F8005BC034 /* Sprite Kit */,
+				831EC6D21C346700005BC034 /* State */,
+				831EC6D31C346709005BC034 /* View */,
 				831EC6B51C346341005BC034 /* AppDelegate.h */,
 				831EC6B61C346341005BC034 /* AppDelegate.m */,
 				831EC6B81C346341005BC034 /* GameScene.h */,
@@ -85,6 +91,49 @@
 				831EC6B31C346341005BC034 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		831EC6CE1C3466BB005BC034 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		831EC6CF1C3466CD005BC034 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = MergePower/Controller;
+			sourceTree = SOURCE_ROOT;
+		};
+		831EC6D01C3466EE005BC034 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		831EC6D11C3466F8005BC034 /* Sprite Kit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Sprite Kit";
+			sourceTree = "<group>";
+		};
+		831EC6D21C346700005BC034 /* State */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		831EC6D31C346709005BC034 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
