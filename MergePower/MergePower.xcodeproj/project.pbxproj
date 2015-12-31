@@ -21,6 +21,12 @@
 		831EC6DB1C346880005BC034 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831EC6DA1C346880005BC034 /* Foundation.framework */; };
 		831EC6E01C346E27005BC034 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EC6DF1C346E27005BC034 /* Theme.m */; };
 		831EC6E41C347A18005BC034 /* GlobalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EC6E31C347A18005BC034 /* GlobalState.m */; };
+		831EC6E71C34864B005BC034 /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 831EC6E61C34864B005BC034 /* GameManager.m */; };
+		83426F671C35D01E008A5AD4 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 83426F661C35D01E008A5AD4 /* MyScene.m */; };
+		83426F6A1C35D22B008A5AD4 /* MyGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 83426F691C35D22B008A5AD4 /* MyGrid.m */; };
+		83426F6D1C35D411008A5AD4 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83426F6C1C35D411008A5AD4 /* MyCell.m */; };
+		83426F701C35D4BF008A5AD4 /* MyTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 83426F6F1C35D4BF008A5AD4 /* MyTile.m */; };
+		83426F731C35D73E008A5AD4 /* MyGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83426F721C35D73E008A5AD4 /* MyGridView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,18 @@
 		831EC6E11C3473D1005BC034 /* MyPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPosition.h; sourceTree = "<group>"; };
 		831EC6E21C347A18005BC034 /* GlobalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalState.h; sourceTree = "<group>"; };
 		831EC6E31C347A18005BC034 /* GlobalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalState.m; sourceTree = "<group>"; };
+		831EC6E51C34864B005BC034 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		831EC6E61C34864B005BC034 /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
+		83426F651C35D01E008A5AD4 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		83426F661C35D01E008A5AD4 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		83426F681C35D22B008A5AD4 /* MyGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGrid.h; sourceTree = "<group>"; };
+		83426F691C35D22B008A5AD4 /* MyGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGrid.m; sourceTree = "<group>"; };
+		83426F6B1C35D411008A5AD4 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		83426F6C1C35D411008A5AD4 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		83426F6E1C35D4BF008A5AD4 /* MyTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTile.h; sourceTree = "<group>"; };
+		83426F6F1C35D4BF008A5AD4 /* MyTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTile.m; sourceTree = "<group>"; };
+		83426F711C35D73E008A5AD4 /* MyGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGridView.h; sourceTree = "<group>"; };
+		83426F721C35D73E008A5AD4 /* MyGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGridView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +161,14 @@
 			children = (
 				831EC6B81C346341005BC034 /* GameScene.h */,
 				831EC6B91C346341005BC034 /* GameScene.m */,
+				83426F651C35D01E008A5AD4 /* MyScene.h */,
+				83426F661C35D01E008A5AD4 /* MyScene.m */,
+				83426F681C35D22B008A5AD4 /* MyGrid.h */,
+				83426F691C35D22B008A5AD4 /* MyGrid.m */,
+				83426F6B1C35D411008A5AD4 /* MyCell.h */,
+				83426F6C1C35D411008A5AD4 /* MyCell.m */,
+				83426F6E1C35D4BF008A5AD4 /* MyTile.h */,
+				83426F6F1C35D4BF008A5AD4 /* MyTile.m */,
 			);
 			path = "Sprite Kit";
 			sourceTree = "<group>";
@@ -150,6 +176,8 @@
 		831EC6D21C346700005BC034 /* State */ = {
 			isa = PBXGroup;
 			children = (
+				831EC6E51C34864B005BC034 /* GameManager.h */,
+				831EC6E61C34864B005BC034 /* GameManager.m */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -157,6 +185,8 @@
 		831EC6D31C346709005BC034 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83426F711C35D73E008A5AD4 /* MyGridView.h */,
+				83426F721C35D73E008A5AD4 /* MyGridView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,11 +274,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83426F671C35D01E008A5AD4 /* MyScene.m in Sources */,
+				83426F6A1C35D22B008A5AD4 /* MyGrid.m in Sources */,
 				831EC6BF1C346341005BC034 /* GameViewController.m in Sources */,
+				83426F6D1C35D411008A5AD4 /* MyCell.m in Sources */,
 				831EC6B71C346341005BC034 /* AppDelegate.m in Sources */,
 				831EC6E41C347A18005BC034 /* GlobalState.m in Sources */,
+				83426F731C35D73E008A5AD4 /* MyGridView.m in Sources */,
 				831EC6BA1C346341005BC034 /* GameScene.m in Sources */,
 				831EC6E01C346E27005BC034 /* Theme.m in Sources */,
+				83426F701C35D4BF008A5AD4 /* MyTile.m in Sources */,
+				831EC6E71C34864B005BC034 /* GameManager.m in Sources */,
 				831EC6B41C346341005BC034 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +436,7 @@
 				831EC6CD1C346341005BC034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
