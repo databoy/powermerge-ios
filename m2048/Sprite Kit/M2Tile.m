@@ -3,7 +3,8 @@
 //  m2048
 //
 //  Created by Danqing on 3/16/14.
-//  Copyright (c) 2014 Danqing. All rights reserved.
+//  Modified by Chris Pitchford on 1/11/2016
+//  Copyright © 2015 Chris Pitchford Publishing, LTD. All rights reserved.
 //
 
 #include <stdlib.h>

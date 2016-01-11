@@ -312,7 +312,7 @@
 			attributes = {
 				CLASSPREFIX = M2;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = Danqing;
+				ORGANIZATIONNAME = "Chris Pitchford Publishing, LTD";
 				TargetAttributes = {
 					2443DC5118D662CA00C920C1 = {
 						DevelopmentTeam = U3FZR3Z3ZW;

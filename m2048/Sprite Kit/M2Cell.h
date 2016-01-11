@@ -3,7 +3,7 @@
 //  m2048
 //
 //  Created by Danqing on 3/17/14.
-//  Copyright (c) 2014 Danqing. All rights reserved.
+//  Copyright © 2015 Chris Pitchford Publishing, LTD. All rights reserved.
 //
 
 @import Foundation;

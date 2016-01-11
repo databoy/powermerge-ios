@@ -3,7 +3,7 @@
 //  m2048
 //
 
-//  Copyright (c) 2014 Danqing. All rights reserved.
+//  Copyright © 2015 Chris Pitchford Publishing, LTD. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
