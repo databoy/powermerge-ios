@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2443DC5218D662CA00C920C1 /* m2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = m2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2443DC5218D662CA00C920C1 /* MergePower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MergePower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2443DC5518D662CA00C920C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2443DC5718D662CA00C920C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2443DC5918D662CA00C920C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -132,7 +132,7 @@
 		2443DC5318D662CA00C920C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2443DC5218D662CA00C920C1 /* m2048.app */,
+				2443DC5218D662CA00C920C1 /* MergePower.app */,
 				2443DC7A18D662CA00C920C1 /* m2048Tests.xctest */,
 			);
 			name = Products;
@@ -269,9 +269,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2443DC5118D662CA00C920C1 /* m2048 */ = {
+		2443DC5118D662CA00C920C1 /* MergePower */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2443DC8B18D662CA00C920C1 /* Build configuration list for PBXNativeTarget "m2048" */;
+			buildConfigurationList = 2443DC8B18D662CA00C920C1 /* Build configuration list for PBXNativeTarget "MergePower" */;
 			buildPhases = (
 				2443DC4E18D662CA00C920C1 /* Sources */,
 				2443DC4F18D662CA00C920C1 /* Frameworks */,
@@ -281,9 +281,9 @@
 			);
 			dependencies = (
 			);
-			name = m2048;
+			name = MergePower;
 			productName = m2048;
-			productReference = 2443DC5218D662CA00C920C1 /* m2048.app */;
+			productReference = 2443DC5218D662CA00C920C1 /* MergePower.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2443DC7918D662CA00C920C1 /* m2048Tests */ = {
@@ -335,7 +335,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2443DC5118D662CA00C920C1 /* m2048 */,
+				2443DC5118D662CA00C920C1 /* MergePower */,
 				2443DC7918D662CA00C920C1 /* m2048Tests */,
 			);
 		};
@@ -398,7 +398,7 @@
 /* Begin PBXTargetDependency section */
 		2443DC8018D662CA00C920C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2443DC5118D662CA00C920C1 /* m2048 */;
+			target = 2443DC5118D662CA00C920C1 /* MergePower */;
 			targetProxy = 2443DC7F18D662CA00C920C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -512,7 +512,7 @@
 				GCC_PREFIX_HEADER = "m2048/m2048-Prefix.pch";
 				INFOPLIST_FILE = "m2048/m2048-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chrispitchford.m2048;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrispitchford.MergePower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -529,7 +529,7 @@
 				GCC_PREFIX_HEADER = "m2048/m2048-Prefix.pch";
 				INFOPLIST_FILE = "m2048/m2048-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chrispitchford.m2048;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrispitchford.MergePower;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -590,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2443DC8B18D662CA00C920C1 /* Build configuration list for PBXNativeTarget "m2048" */ = {
+		2443DC8B18D662CA00C920C1 /* Build configuration list for PBXNativeTarget "MergePower" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2443DC8C18D662CA00C920C1 /* Debug */,
