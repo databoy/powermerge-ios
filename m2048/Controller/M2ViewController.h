@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import <iAd/iAd.h>
 
-@interface M2ViewController : UIViewController
+@interface M2ViewController : UIViewController<ADBannerViewDelegate>
 
 - (void)updateScore:(NSInteger)score;
 
