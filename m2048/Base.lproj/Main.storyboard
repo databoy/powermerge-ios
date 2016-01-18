@@ -137,9 +137,19 @@
                                     <outlet property="restartGame" destination="qXD-8y-R8y" id="K7b-ex-bao"/>
                                 </connections>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6H-oP-M8U" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YvH-T1-a97"/>
+                                    <constraint firstAttribute="width" constant="320" id="tz2-PN-TZV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="K6H-oP-M8U" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="MKA-p5-RIx"/>
+                            <constraint firstItem="aVg-JY-jeM" firstAttribute="top" secondItem="K6H-oP-M8U" secondAttribute="bottom" id="QZn-eL-A39"/>
                             <constraint firstAttribute="trailing" secondItem="7bR-CK-ht0" secondAttribute="trailing" id="XQK-Ao-Gw7"/>
                             <constraint firstItem="7bR-CK-ht0" firstAttribute="top" secondItem="bdc-N1-crn" secondAttribute="top" id="Yjw-hH-Qj2"/>
                             <constraint firstAttribute="bottom" secondItem="7bR-CK-ht0" secondAttribute="bottom" id="Ysg-Ye-xrC"/>
@@ -157,6 +167,7 @@
                         <outlet property="_settingsButton" destination="8r1-lH-tEE" id="UN6-bn-dHf"/>
                         <outlet property="_subtitle" destination="r98-Zq-3Of" id="s6F-Zh-xnD"/>
                         <outlet property="_targetScore" destination="C71-5n-Bsx" id="aJX-Jq-2Dq"/>
+                        <outlet property="bannerView" destination="K6H-oP-M8U" id="Gof-2f-uBs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>

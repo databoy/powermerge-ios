@@ -33,41 +33,85 @@
 
 - (void)viewDidLoad
 {
-  [super viewDidLoad];
-  
-  [self updateState];
-  
-  _bestView.score.text = [NSString stringWithFormat:@"%ld", (long)[Settings integerForKey:@"Best Score"]];
-  
-  _restartButton.layer.cornerRadius = [GSTATE cornerRadius];
-  _restartButton.layer.masksToBounds = YES;
-  
-  _settingsButton.layer.cornerRadius = [GSTATE cornerRadius];
-  _settingsButton.layer.masksToBounds = YES;
-  
-  _overlay.hidden = YES;
-  _overlayBackground.hidden = YES;
-  
-  // Configure the view.
-  SKView * skView = (SKView *)self.view;
-  
-  // Create and configure the scene.
-  M2Scene * scene = [M2Scene sceneWithSize:skView.bounds.size];
-  scene.scaleMode = SKSceneScaleModeAspectFill;
-  
-  // Present the scene.
-  [skView presentScene:scene];
-  [self updateScore:0];
-  [scene startNewGame];
-  
-  _scene = scene;
-  _scene.controller = self;
+    [super viewDidLoad];
+
+    [self updateState];
+
+    _bestView.score.text = [NSString stringWithFormat:@"%ld", (long)[Settings integerForKey:@"Best Score"]];
+
+    _restartButton.layer.cornerRadius = [GSTATE cornerRadius];
+    _restartButton.layer.masksToBounds = YES;
+
+    _settingsButton.layer.cornerRadius = [GSTATE cornerRadius];
+    _settingsButton.layer.masksToBounds = YES;
+
+    _overlay.hidden = YES;
+    _overlayBackground.hidden = YES;
+
+    // Configure the view.
+    SKView * skView = (SKView *)self.view;
+
+    // Create and configure the scene.
+    M2Scene * scene = [M2Scene sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+
+    // Present the scene.
+    [skView presentScene:scene];
+    [self updateScore:0];
+    [scene startNewGame];
+
+    _scene = scene;
+    _scene.controller = self;
+    
+//    NSLog(@"Google Mobile Ads SDK version: %@", [GADRequest sdkVersion]);
+    GADBannerView *myBannerView =  [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+    myBannerView.adUnitID = @"ca-app-pub-9438984500953810/3031002318";
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenHeight = screenRect.size.height;
+    CGFloat adHeight;
+    
+    if ((float) screenHeight / 1024 == 1 || (float) screenHeight / 1024 == 2) {
+        adHeight = screenHeight - 90;
+    }
+    else {
+        adHeight = screenHeight - 50;
+    }
+    [myBannerView setFrame:CGRectMake(0,
+                                     adHeight,
+                                     myBannerView.bounds.size.width,
+                                     myBannerView.bounds.size.height)];
+ 
+    // Add to view so ARC can retain/spew/whatever
+    [self.view addSubview:myBannerView];
+
+    myBannerView.rootViewController = self;
+    myBannerView.delegate = self;
+
+    // set to IBOutlet
+    self.bannerView = myBannerView;
+    
+    // Make request!
+    GADRequest *request = [GADRequest request];
+    request.testDevices = @[kGADSimulatorID, @"ad8ad7eabdac705619e39abb2a959b7e"];
+    [self.bannerView loadRequest:[GADRequest request]];
+    
+    // Make sure we can see it!
+    [self.view bringSubviewToFront:self.bannerView];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
+}
+
+- (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error {
+//    NSLog(@"GAD Error: %@", error);
+}
+
+- (void)adViewDidReceiveAd:(GADBannerView *)bannerView {
+//    NSLog(@"GAD has ad");
+//    NSLog(@"GAD has id: %@", bannerView.adUnitID);
 }
 
 - (void)updateState

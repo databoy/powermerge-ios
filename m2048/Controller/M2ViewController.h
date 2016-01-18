@@ -9,10 +9,18 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 
-@interface M2ViewController : UIViewController
+@import GoogleMobileAds;
+
+@interface M2ViewController : UIViewController <GADBannerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 
 - (void)updateScore:(NSInteger)score;
 
 - (void)endGame:(BOOL)won;
+
+- (void)adView:(GADBannerView *)bannerView didFailToReceiveAdWithError:(GADRequestError *)error;
+
+- (void)adViewDidReceiveAd:(GADBannerView *)bannerView;
 
 @end

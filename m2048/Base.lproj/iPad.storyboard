@@ -137,12 +137,22 @@
                                     <segue destination="pW0-EP-ySa" kind="modal" identifier="Settings Segue" id="GHf-K9-Vj5"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Y4-5t-Zs3" customClass="GADBannerView">
+                                <rect key="frame" x="224" y="974" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cEG-9k-MTe"/>
+                                    <constraint firstAttribute="width" constant="320" id="gkT-6z-Rbi"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5Y4-5t-Zs3" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="4rt-n1-Chk"/>
                             <constraint firstAttribute="trailing" secondItem="7bR-CK-ht0" secondAttribute="trailing" id="XQK-Ao-Gw7"/>
                             <constraint firstItem="7bR-CK-ht0" firstAttribute="top" secondItem="bdc-N1-crn" secondAttribute="top" id="Yjw-hH-Qj2"/>
                             <constraint firstAttribute="bottom" secondItem="7bR-CK-ht0" secondAttribute="bottom" id="Ysg-Ye-xrC"/>
+                            <constraint firstItem="aVg-JY-jeM" firstAttribute="top" secondItem="5Y4-5t-Zs3" secondAttribute="bottom" id="Zpt-Pv-6tu"/>
                             <constraint firstItem="7bR-CK-ht0" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leading" id="dkE-7i-2C5"/>
                             <constraint firstItem="KIH-aN-5FZ" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="kLp-7P-D5w"/>
                             <constraint firstItem="KIH-aN-5FZ" firstAttribute="top" secondItem="TvN-0d-DFh" secondAttribute="bottom" constant="20" id="xOk-mj-1KE"/>
@@ -157,6 +167,7 @@
                         <outlet property="_settingsButton" destination="8r1-lH-tEE" id="UN6-bn-dHf"/>
                         <outlet property="_subtitle" destination="r98-Zq-3Of" id="s6F-Zh-xnD"/>
                         <outlet property="_targetScore" destination="C71-5n-Bsx" id="aJX-Jq-2Dq"/>
+                        <outlet property="bannerView" destination="5Y4-5t-Zs3" id="PKt-Md-LjV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
